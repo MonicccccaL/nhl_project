@@ -2,6 +2,10 @@
 
 Phase 1 of the project audits the Kaggle NHL Game Data, cleans it, and saves a small set of clean tables for the later phases (EDA, clustering, Tableau). Everything happens in one notebook.
 
+## Data
+
+This project uses the [NHL Game Data](https://www.kaggle.com/datasets/martinellis/nhl-game-data) dataset by Martin Ellis on Kaggle. The data is not included in this repository. Download the CSVs from Kaggle and place them in `data/raw/` before running the notebook.
+
 ## What's in this folder
 
 ```
