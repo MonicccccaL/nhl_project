@@ -2,3 +2,5 @@ data/raw/*.csv
 data/clean/*.parquet
 .ipynb_checkpoints/
 .DS_Store
+.tmp/
+.venv/

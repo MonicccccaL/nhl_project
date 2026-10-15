@@ -1,0 +1,63 @@
+entity,entity_id,field,issue,value_found,value_used,resolution,n_records
+player,Alexandre Picard,name,two different players share a name,"8470678 (D, b. 1985-07-05 00:00:00) | 8471221 (LW, b. 1985-10-09 00:00:00)",,kept separate; always join on player_id,1
+player,Colin White,name,two different players share a name,"8465005 (D, b. 1977-12-12 00:00:00) | 8478400 (C, b. 1997-01-30 00:00:00)",,kept separate; always join on player_id,1
+player,Erik Gustafsson,name,two different players share a name,"8475640 (D, b. 1988-12-15 00:00:00) | 8476979 (D, b. 1992-03-14 00:00:00)",,kept separate; always join on player_id,1
+player,Jonas Johansson,name,two different players share a name,"8470150 (RW, b. 1984-03-18 00:00:00) | 8477992 (G, b. 1995-09-19 00:00:00)",,kept separate; always join on player_id,1
+player,Mike Brown,name,two different players share a name,"8466155 (LW, b. 1979-04-27 00:00:00) | 8471371 (RW, b. 1985-06-24 00:00:00)",,kept separate; always join on player_id,1
+player,Mike Green,name,two different players share a name,"8468436 (C, b. 1979-08-23 00:00:00) | 8471242 (D, b. 1985-10-12 00:00:00)",,kept separate; always join on player_id,1
+player,Mikko Lehtonen,name,two different players share a name,"8469714 (D, b. 1978-06-12 00:00:00) | 8471747 (RW, b. 1987-04-01 00:00:00)",,kept separate; always join on player_id,1
+player,Petr Svoboda,name,two different players share a name,"8451789 (D, b. 1966-02-14 00:00:00) | 8467510 (D, b. 1980-06-20 00:00:00)",,kept separate; always join on player_id,1
+player,Petr Sykora,name,two different players share a name,"8460465 (RW, b. 1976-11-19 00:00:00) | 8466208 (C, b. 1978-12-21 00:00:00)",,kept separate; always join on player_id,1
+player,Sean Collins,name,two different players share a name,"8473913 (D, b. 1983-10-30 00:00:00) | 8474744 (C, b. 1988-12-29 00:00:00)",,kept separate; always join on player_id,1
+player,Sebastian Aho,name,two different players share a name,"8480222 (D, b. 1996-02-17 00:00:00) | 8478427 (RW, b. 1997-07-26 00:00:00)",,kept separate; always join on player_id,1
+player,(all),birthDate,birth date stored with a non-midnight time,YYYY-MM-DD 01:00:00,YYYY-MM-DD,kept the calendar date,2342
+player,(all),nationality,missing in player_info,NA,NULL,"left NULL, not imputed",8
+player,(all),shoots_catches,missing in player_info,NA,NULL,"left NULL, not imputed",17
+player,(all),height,missing in player_info,NA,NULL,"left NULL, not imputed",3
+player,(all),weight,missing in player_info,NA,NULL,"left NULL, not imputed",3
+player,(all),birth_city,missing in player_info,NA,NULL,"left NULL, not imputed",5
+game,(table),(all),exact duplicate rows,26305,23735,dropped exact copies,2570
+game_teams_stats,(table),(all),exact duplicate rows,52610,47470,dropped exact copies,5140
+game_skater_stats,(table),(all),exact duplicate rows,945830,853404,dropped exact copies,92426
+game_goalie_stats,(table),(all),exact duplicate rows,56656,51163,dropped exact copies,5493
+game_plays,(table),(all),exact duplicate rows,5050529,4217063,dropped exact copies,833466
+game_plays_players,(table),(all),exact duplicate rows,7586604,6362804,dropped exact copies,1223800
+game_goals,(table),(all),exact duplicate rows,148992,133345,dropped exact copies,15647
+game_penalties,(table),(all),exact duplicate rows,247828,229228,dropped exact copies,18600
+game,2019030016,type,raw type R but game_id says postseason (Aug 2020 qualifying round),R,Playoff,used the game_id,1
+game,2019030002,type,raw type R but game_id says postseason (Aug 2020 qualifying round),R,Playoff,used the game_id,1
+game,2019030015,type,raw type R but game_id says postseason (Aug 2020 qualifying round),R,Playoff,used the game_id,1
+game,2019030012,type,raw type R but game_id says postseason (Aug 2020 qualifying round),R,Playoff,used the game_id,1
+game,2019030014,type,raw type R but game_id says postseason (Aug 2020 qualifying round),R,Playoff,used the game_id,1
+game,2019030013,type,raw type R but game_id says postseason (Aug 2020 qualifying round),R,Playoff,used the game_id,1
+game,2019030003,type,raw type R but game_id says postseason (Aug 2020 qualifying round),R,Playoff,used the game_id,1
+game,2019030004,type,raw type R but game_id says postseason (Aug 2020 qualifying round),R,Playoff,used the game_id,1
+game,2019030011,type,raw type R but game_id says postseason (Aug 2020 qualifying round),R,Playoff,used the game_id,1
+game,2019030005,type,raw type R but game_id says postseason (Aug 2020 qualifying round),R,Playoff,used the game_id,1
+game,2019030001,type,raw type R but game_id says postseason (Aug 2020 qualifying round),R,Playoff,used the game_id,1
+game,2019030006,type,raw type R but game_id says postseason (Aug 2020 qualifying round),R,Playoff,used the game_id,1
+game,seasons before 2010,season,outside the analysis window,11070,0,excluded: hits/blocks/takeaways/giveaways not recorded before 2010-11,11070
+game,2019040652,type,All-Star exhibition,A,,excluded,1
+game,2019040653,type,All-Star exhibition,A,,excluded,1
+game,2018040642,type,All-Star exhibition,A,,excluded,1
+game,2018040643,type,All-Star exhibition,A,,excluded,1
+game,2019040651,type,All-Star exhibition,A,,excluded,1
+game,2017030416,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
+game,2017030227,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
+game,2016030155,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
+game,2017030417,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
+game,2017030185,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
+game,2016030417,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
+game,2017030326,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
+game,2016030137,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
+game,2017030327,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
+game,2016030217,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
+game,2016030175,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
+game,2017030247,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
+game,2017030175,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
+game,2016030327,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
+player_game,2011020129:8468481,timeOnIce,0 seconds time on ice,0,0,kept; flagged zero_toi_flag (leave out of per-60 rates),1
+player_game,2014020841:8473614,timeOnIce,0 seconds time on ice,0,0,kept; flagged zero_toi_flag (leave out of per-60 rates),1
+player_game,2015020493:8474593,timeOnIce,0 seconds time on ice,0,0,kept; flagged zero_toi_flag (leave out of per-60 rates),1
+player_game,2017020850:8473607,timeOnIce,0 seconds time on ice,0,0,kept; flagged zero_toi_flag (leave out of per-60 rates),1
+player_game,2019020604:8478007,timeOnIce,0 seconds time on ice,0,0,kept; flagged zero_toi_flag (leave out of per-60 rates),1
