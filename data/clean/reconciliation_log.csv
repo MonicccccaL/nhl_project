@@ -24,38 +24,38 @@ game_plays,(table),(all),exact duplicate rows,5050529,4217063,dropped exact copi
 game_plays_players,(table),(all),exact duplicate rows,7586604,6362804,dropped exact copies,1223800
 game_goals,(table),(all),exact duplicate rows,148992,133345,dropped exact copies,15647
 game_penalties,(table),(all),exact duplicate rows,247828,229228,dropped exact copies,18600
-game,2019030016,type,raw type R but game_id says postseason (Aug 2020 qualifying round),R,Playoff,used the game_id,1
-game,2019030002,type,raw type R but game_id says postseason (Aug 2020 qualifying round),R,Playoff,used the game_id,1
-game,2019030015,type,raw type R but game_id says postseason (Aug 2020 qualifying round),R,Playoff,used the game_id,1
-game,2019030012,type,raw type R but game_id says postseason (Aug 2020 qualifying round),R,Playoff,used the game_id,1
-game,2019030014,type,raw type R but game_id says postseason (Aug 2020 qualifying round),R,Playoff,used the game_id,1
-game,2019030013,type,raw type R but game_id says postseason (Aug 2020 qualifying round),R,Playoff,used the game_id,1
 game,2019030003,type,raw type R but game_id says postseason (Aug 2020 qualifying round),R,Playoff,used the game_id,1
-game,2019030004,type,raw type R but game_id says postseason (Aug 2020 qualifying round),R,Playoff,used the game_id,1
-game,2019030011,type,raw type R but game_id says postseason (Aug 2020 qualifying round),R,Playoff,used the game_id,1
-game,2019030005,type,raw type R but game_id says postseason (Aug 2020 qualifying round),R,Playoff,used the game_id,1
 game,2019030001,type,raw type R but game_id says postseason (Aug 2020 qualifying round),R,Playoff,used the game_id,1
 game,2019030006,type,raw type R but game_id says postseason (Aug 2020 qualifying round),R,Playoff,used the game_id,1
+game,2019030011,type,raw type R but game_id says postseason (Aug 2020 qualifying round),R,Playoff,used the game_id,1
+game,2019030005,type,raw type R but game_id says postseason (Aug 2020 qualifying round),R,Playoff,used the game_id,1
+game,2019030002,type,raw type R but game_id says postseason (Aug 2020 qualifying round),R,Playoff,used the game_id,1
+game,2019030015,type,raw type R but game_id says postseason (Aug 2020 qualifying round),R,Playoff,used the game_id,1
+game,2019030013,type,raw type R but game_id says postseason (Aug 2020 qualifying round),R,Playoff,used the game_id,1
+game,2019030016,type,raw type R but game_id says postseason (Aug 2020 qualifying round),R,Playoff,used the game_id,1
+game,2019030004,type,raw type R but game_id says postseason (Aug 2020 qualifying round),R,Playoff,used the game_id,1
+game,2019030012,type,raw type R but game_id says postseason (Aug 2020 qualifying round),R,Playoff,used the game_id,1
+game,2019030014,type,raw type R but game_id says postseason (Aug 2020 qualifying round),R,Playoff,used the game_id,1
 game,seasons before 2010,season,outside the analysis window,11070,0,excluded: hits/blocks/takeaways/giveaways not recorded before 2010-11,11070
-game,2019040652,type,All-Star exhibition,A,,excluded,1
+game,2019040651,type,All-Star exhibition,A,,excluded,1
 game,2019040653,type,All-Star exhibition,A,,excluded,1
 game,2018040642,type,All-Star exhibition,A,,excluded,1
+game,2019040652,type,All-Star exhibition,A,,excluded,1
 game,2018040643,type,All-Star exhibition,A,,excluded,1
-game,2019040651,type,All-Star exhibition,A,,excluded,1
-game,2017030416,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
-game,2017030227,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
-game,2016030155,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
-game,2017030417,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
-game,2017030185,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
-game,2016030417,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
-game,2017030326,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
-game,2016030137,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
-game,2017030327,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
-game,2016030217,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
-game,2016030175,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
-game,2017030247,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
 game,2017030175,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
 game,2016030327,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
+game,2016030417,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
+game,2017030327,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
+game,2016030217,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
+game,2017030326,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
+game,2016030137,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
+game,2016030175,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
+game,2017030416,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
+game,2017030227,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
+game,2017030417,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
+game,2016030155,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
+game,2017030185,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
+game,2017030247,outcome,scheduled playoff game never played,tbc win tbc,,excluded,1
 player_game,2011020129:8468481,timeOnIce,0 seconds time on ice,0,0,kept; flagged zero_toi_flag (leave out of per-60 rates),1
 player_game,2014020841:8473614,timeOnIce,0 seconds time on ice,0,0,kept; flagged zero_toi_flag (leave out of per-60 rates),1
 player_game,2015020493:8474593,timeOnIce,0 seconds time on ice,0,0,kept; flagged zero_toi_flag (leave out of per-60 rates),1
