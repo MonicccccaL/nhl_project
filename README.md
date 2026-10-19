@@ -6,23 +6,25 @@ Everything runs locally in Python with DuckDB, which queries the CSV and Parquet
 
 ## Highlights
 
-**Goal differential explains the standings almost completely.** Across the decade, a franchise's goals for minus goals against correlates 0.98 with its points percentage. Pittsburgh, Boston and Washington were the best regular-season teams; Buffalo and Edmonton were the worst. The top teams won in different ways: Boston and St. Louis allowed the fewest goals, while Tampa Bay and Vegas scored the most.
+**Scoring jumped in 2017-18 after years of standing still.** From 2011-12 to 2015-16 teams scored about 2.66 goals per game every season. By 2018-19 that had risen to 2.98. Shot totals barely moved, so the rise came mostly from finishing: league shooting % went from 9.0% to 9.5%.
 
-**Shooting and goaltending drive a single season, but they don't last.** Team shooting % plus save % (PDO) is the stat most closely tied to points % in a given season (0.76), yet it barely carries over to the next season (0.30). Shot share, a simple measure of puck possession, repeats much better (0.62) and predicts next season's points % at least as well as points % itself.
+**Penalties became rarer every year, but power plays got deadlier.** Power plays per team-game fell from 3.5 in 2010-11 to about 3.0, and penalty minutes from 12.3 to 8.4. Teams still converted more of the chances they got, about 20% by the end of the decade against 17 to 18% at the start.
 
-![Which team stats carry over to the next season](outputs/figures/3a_teams/4_1_repeatability.png)
+**3-on-3 overtime nearly halved the number of shootouts.** About one game in four went past regulation in every season. Once overtime switched from 4-on-4 to 3-on-3 in 2015-16, far more of those games ended in overtime: the share decided by a shootout fell from about 14% of all games to about 8%.
 
-**Single-game box scores mislead because of the score.** A team that is ahead sits back and lets the other team shoot: in third periods, trailing teams take 58% of the shots. As a result, the team that outshoots its opponent wins exactly 50% of games, and the team that blocks more shots wins 62%. The team with more hits wins only 44%.
+![Season recap](outputs/figures/3a_teams/1_1_season_recap.png)
 
-![Share of games won by the team that wins each stat](outputs/figures/3a_teams/3_3_battles_won.png)
+**The best regular-season team won the Cup only once in ten years.** Chicago did it in the shortened 2012-13 season. Every other champion finished somewhere between 2nd and 13th, including Los Angeles in 2011-12 after finishing 13th. Tampa Bay's 0.780 points % in 2018-19 was the best full-season record of the decade, and it was then swept in the first round by Columbus. Seven different franchises won the ten Cups.
 
-**Home scorekeepers are generous.** Home teams are credited with more takeaways in 63% of games and more giveaways on average, so stats counted by arena staff need adjusting before teams or players are compared.
+**Over the whole decade, though, the best teams did win.** Goal differential explains a team's ten-year points % almost perfectly (correlation 0.98), and better regular-season franchises won far more playoff games (0.86). Pittsburgh, Boston and Washington had the best records and all won at least one Cup; Buffalo and Edmonton had the worst and won 11 playoff games between them.
 
-**The league changed in 2017-18.** Scoring jumped from about 2.66 to 2.98 goals per team-game, driven by better finishing (shooting % rose from 9.0% to 9.5%) more than extra shots. Penalties fell steadily all decade, while power plays converted more often.
+**Teams rose and fell fast.** Colorado went from 0.683 in 2013-14 to a league-worst 0.293 in 2016-17, then back to 0.66 by 2019-20. Detroit slid steadily from 0.63 to 0.275, and Chicago went from 0.80 in 2012-13 to about 0.50 from 2017-18 on. Vegas was the other extreme: it reached the Cup Final in its first season.
 
-**Regular-season success is a weak guide to the Cup in any one year.** The team with the best record won the Stanley Cup only once in ten seasons (Chicago in 2012-13), and Los Angeles won in 2011-12 after finishing 13th. Over the whole decade, though, better regular-season franchises won far more playoff games (correlation 0.86).
+![Points % by franchise and season](outputs/figures/3a_teams/2_2_points_by_season.png)
 
-**Mid-season coaching changes usually "worked", mostly through luck evening out.** Teams improved after 30 of 37 mid-season coaching changes, by a median of 11 percentage points of points %, but their shot share barely moved.
+**Hot shooting and hot goaltending win a season but rarely last.** Team shooting % plus save % is the stat most closely tied to a season's points % (correlation 0.76), yet it barely carries into the next season (0.30). Shot share, a simple measure of puck possession, repeats far better and predicts next season's results at least as well as the standings do.
+
+**Changing the coach in mid-season usually looked like it worked.** Teams improved after 30 of 37 mid-season coaching changes. St. Louis went from 0.45 to 0.65 after its change in 2018-19 and won the Cup. Shot share barely changed in most cases, though, so much of the improvement looks like bad luck evening out rather than the new coach.
 
 ## Building a clean dataset
 
