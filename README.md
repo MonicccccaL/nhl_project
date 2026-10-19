@@ -1,6 +1,6 @@
 # NHL Player Analytics
 
-Phase 1 of the project audits the Kaggle NHL Game Data, cleans it, and saves a small set of clean tables for the later phases (EDA, clustering, Tableau). Everything happens in one notebook.
+Phase 1 of the project audits the Kaggle NHL Game Data, cleans it, and saves a small set of clean tables for the later phases. Phase 3 explores those tables to set up the clustering and salary model. Each phase is one notebook.
 
 ## Data
 
@@ -11,11 +11,16 @@ This project uses the [NHL Game Data](https://www.kaggle.com/datasets/martinelli
 ```
 nhl_project/
 ├── phase1_data_audit_and_cleaning.ipynb   the whole of Phase 1, top to bottom
+├── eda/
+│   ├── eda_utils.py                       shared setup imported by every Phase 3 notebook
+│   └── 3a_teams.ipynb                     Phase 3A: season recap and team analysis
 ├── requirements.txt                       Python packages to install
 ├── README.md                              this file
-└── data/
-    ├── raw/      put the Kaggle CSVs here
-    └── clean/    the notebook saves the clean tables here
+├── data/
+│   ├── raw/      put the Kaggle CSVs here
+│   └── clean/    the notebook saves the clean tables here
+└── outputs/
+    └── figures/  charts saved by the Phase 3 notebooks, one folder per notebook
 ```
 
 The notebook already contains the results from my run, so you can read it right away. To run it yourself, follow the setup below once.
@@ -48,9 +53,21 @@ It takes about a minute without `game_plays.csv`, and a few minutes with it. Whe
 | `dim_team.parquet` | team |
 | `fact_game.parquet` | game (2010-11 to 2019-20, regular season and playoffs) |
 | `fact_player_game.parquet` | player per game (skaters and goalies) |
+| `fact_team_game.parquet` | team per game, with the opponent's stats on the same row |
 | `fact_play.parquet` | play or event (only if `game_plays.csv` was provided) |
 | `bridge_play_player.parquet` | player role in a play (shooter, goalie, scorer, and so on) |
 | `reconciliation_log.csv` | every record that was excluded, relabelled, or flagged, and why |
+
+## Phase 3: exploratory analysis
+
+Phase 3 is split into several notebooks in `eda/`, each one focused on a single topic: teams, skaters, shots and expected goals, goalies, home ice, hits, and icing. They all use 2010-11 to 2019-20 and start with the same two lines:
+
+```python
+from eda_utils import *
+con, q = connect()
+```
+
+`connect()` opens the Phase 1 tables in `data/clean/` and adds a few shared views: `franchise` (relocated teams under their current name), `league_season` (league averages per season), `skater_season` and `goalie_season` (one row per player per regular season). `eda_utils.py` also sets the chart style and has `draw_rink()` for shot and hit maps. Each notebook saves its charts to `outputs/figures/<notebook name>/`.
 
 ## Changing the season range
 

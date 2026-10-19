@@ -4,3 +4,6 @@ data/clean/*.parquet
 .DS_Store
 .tmp/
 .venv/
+__pycache__/
+.Rhistory
+outputs/figures/*.png
